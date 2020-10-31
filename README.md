@@ -14,3 +14,4 @@
 - [gin获取queryString](/demo14/README.md)
 - [gin获取post请求主体参数](/demo15/README.md)
 - [gin获取URI路径参数](/demo16/README.md)
+- [gin参数绑定](/demo17/README.md)
