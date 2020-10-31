@@ -8,3 +8,4 @@
 - [自定义模版标识符](/demo8/README.md)
 - [gin模版渲染](/demo9/README.md)
 - [gin自定义模版函数](/demo10/README.md)
+- [gin加载静态资源](/demo11/README.md)
