@@ -16,3 +16,4 @@
 - [gin获取URI路径参数](/demo16/README.md)
 - [gin参数绑定](/demo17/README.md)
 - [gin文件上传](/demo18/README.md)
+- [gin重定向](/demo19/README.md)
