@@ -1,7 +1,7 @@
 ## gin获取queryString
 
 - `Query` 获取地址栏传递的key的值，不传递则为空
-- `DefaultQuery` 如果没有key的值，则值curder值
+- `DefaultQuery` 获取地址栏传递的key的值，如果没有key的值，则值为默认值
 - `GetQuery` 获取地址栏传递的key的值，返回key的值和是否传递
 
 ```

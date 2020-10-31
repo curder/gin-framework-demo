@@ -12,3 +12,4 @@
 - [gin模版和静态资源处理](/demo12/README.md)
 - [gin返回json](/demo13/README.md)
 - [gin获取queryString](/demo14/README.md)
+- [gin获取post请求主体参数](/demo15/README.md)
