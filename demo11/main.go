@@ -8,23 +8,23 @@ import (
 
 func main() {
 	var (
-		c   *gin.Engine
+		r   *gin.Engine
 		err error
 	)
 
-	c = gin.Default()
+	r = gin.Default()
 
-	c.Static("/public", "./public") // 加载静态资源，比如css,js,images,fonts等
+	r.Static("/public", "./public") // 加载静态资源，比如css,js,images,fonts等
 
-	c.LoadHTMLGlob("./views/*.tpl") // 加载模版
+	r.LoadHTMLGlob("./views/*.tpl") // 加载模版
 
-	c.GET("/", func(c *gin.Context) {
+	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.tpl", gin.H{
 			"name": "curder",
 		})
 	})
 
-	if err = c.Run(":8080"); err != nil {
+	if err = r.Run(":8080"); err != nil {
 		fmt.Printf("Server start failed,error: %s", err.Error())
 		return
 	}

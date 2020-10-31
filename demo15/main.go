@@ -8,18 +8,18 @@ import (
 
 func main() {
 	var (
-		c   *gin.Engine
+		r   *gin.Engine
 		err error
 	)
-	c = gin.Default()
+	r = gin.Default()
 
-	c.LoadHTMLFiles("./index.tpl")
+	r.LoadHTMLFiles("./index.tpl")
 
-	c.GET("/", func(c *gin.Context) {
+	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.tpl", gin.H{})
 	})
 
-	c.POST("/", func(c *gin.Context) {
+	r.POST("/", func(c *gin.Context) {
 		var (
 			username string
 			password string
@@ -50,7 +50,7 @@ func main() {
 
 	})
 
-	if err = c.Run(":8080"); err != nil {
+	if err = r.Run(":8080"); err != nil {
 		fmt.Printf("Server start error: %s\n", err.Error())
 		return
 	}

@@ -8,12 +8,12 @@ import (
 
 func main() {
 	var (
-		c   *gin.Engine
+		r   *gin.Engine
 		err error
 	)
-	c = gin.Default()
+	r = gin.Default()
 
-	c.GET("/user/:name/:age", func(c *gin.Context) {
+	r.GET("/user/:name/:age", func(c *gin.Context) {
 		var (
 			name string
 			age  string
@@ -28,7 +28,7 @@ func main() {
 		})
 	})
 
-	if err = c.Run(":8080"); err != nil {
+	if err = r.Run(":8080"); err != nil {
 		fmt.Printf("Server start failed, error: %s", err.Error())
 		return
 	}

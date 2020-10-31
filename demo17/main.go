@@ -13,16 +13,16 @@ type User struct {
 
 func main() {
 	var (
-		c   *gin.Engine
+		r   *gin.Engine
 		err error
 	)
 
-	c = gin.Default()
+	r = gin.Default()
 
-	c.GET("/", getHandle)
-	c.POST("/", postHandle)
+	r.GET("/", getHandle)
+	r.POST("/", postHandle)
 
-	if err = c.Run(":8080"); err != nil {
+	if err = r.Run(":8080"); err != nil {
 		fmt.Printf("Server Start error: %s\n", err.Error())
 		return
 	}
