@@ -19,3 +19,4 @@
 - [gin重定向](/demo19/README.md)
 - [gin路由和路由组](/demo20/README.md)
 - [gin中间件](/demo21/README.md)
+- [gorm连接MySQL基本示例](/demo22/README.md)
