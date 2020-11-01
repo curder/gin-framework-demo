@@ -11,7 +11,7 @@ create database gin_framework_demo;
 
 ```
 db.AutoMigrate(&User{}) // 自动迁移
-```                                
+```
 
 - 查询
 
