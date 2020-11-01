@@ -23,3 +23,6 @@
 - [gorm简单查询](/demo23/README.md)
 - [todo小示例](/demo24/README.md)
 - [todo项目结构拆分](/demo25/README.md)
+
+
+> 以上学习教程来源于 [Bilibili【最新Go Web开发教程】基于gin框架和gorm的web开发实战 (七米出品)](https://www.bilibili.com/video/BV1gJ411p7xC)
